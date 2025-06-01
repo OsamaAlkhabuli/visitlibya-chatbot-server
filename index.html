@@ -4,27 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <title>منصة Visit Libya</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Visit Libya Logo" style="height: 80px; margin-bottom: 10px;">
+    <img src="logo.png" alt="Visit Libya Logo" class="logo">
     <h1>منصة ليبيا السياحية - Visit Libya Map</h1>
     <p>استكشف المدن والمعالم والشواطئ والواحات والفنادق والمزيد!</p>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="pages/cities.html">🏙️ المدن السياحية</a></li>
-      <li><a href="pages/beaches.html">🏖️ الشواطئ</a></li>
-      <li><a href="pages/desert.html">🏜️ الصحراء والواحات</a></li>
-      <li><a href="pages/hotels.html">🏨 الإيواء السياحي</a></li>
-      <li><a href="pages/map.html">🗺️ خريطة ليبيا السياحية</a></li>
-    </ul>
-  </nav>
+  <main>
+    <div class="nav-grid">
+      <a href="cities.html" class="nav-card">🏙️ المدن السياحية</a>
+      <a href="beaches.html" class="nav-card">🏖️ الشواطئ</a>
+      <a href="desert.html" class="nav-card">🏜️ الصحراء والواحات</a>
+      <a href="hotels.html" class="nav-card">🏨 الإيواء السياحي</a>
+      <a href="map.html" class="nav-card">🗺️ خريطة ليبيا السياحية</a>
+    </div>
+  </main>
 
   <footer>
-    <p>جميع الحقوق محفوظة © Visit Libya 2025</p>
+    <p>© Visit Libya 2025 - جميع الحقوق محفوظة</p>
   </footer>
+
+  <!-- بوت الدردشة -->
+  <div id="chat-toggle">💬</div>
+  <div id="chat-box">
+    <div id="chat-header">روبوت Visit Libya 🤖 <span id="chat-close">×</span></div>
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="اسألني عن السياحة في ليبيا..." />
+  </div>
+
+  <script src="chatbot-smart.js"></script>
 </body>
 </html>
