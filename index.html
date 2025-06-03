@@ -1,166 +1,19 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>روبوت Visit Libya</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #f4faff, #e0f7fa);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    h1 {
-      color: #009fae;
-      text-align: center;
-      margin: 1em 0;
-      font-size: 2.5em;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    }
-
-    .chat-toggle {
-      position: fixed;
-      bottom: 1em;
-      left: 1em;
-      background: #009fae;
-      color: white;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 1.5em;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s;
-    }
-
-    .chat-toggle:hover {
-      transform: scale(1.1);
-    }
-
-    .chat-box {
-      display: none;
-      flex-direction: column;
-      position: fixed;
-      bottom: 5em;
-      left: 1em;
-      width: 90vw;
-      max-width: 400px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-    }
-
-    .chat-header {
-      background: #009fae;
-      color: white;
-      padding: 0.8em;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-
-    .chat-messages {
-      flex-grow: 1;
-      max-height: 300px;
-      overflow-y: auto;
-      padding: 1em;
-      background: #f9f9f9;
-    }
-
-    .chat-message {
-      margin: 0.5em 0;
-      padding: 0.8em;
-      border-radius: 8px;
-      max-width: 80%;
-      word-wrap: break-word;
-    }
-
-    .chat-message.user {
-      background: #009fae;
-      color: white;
-      margin-left: auto;
-      text-align: right;
-    }
-
-    .chat-message.bot {
-      background: #e0f7fa;
-      color: #333;
-      margin-right: auto;
-      text-align: right;
-    }
-
-    .chat-message.loading {
-      background: #f0f0f0;
-      color: #666;
-      font-style: italic;
-    }
-
-    .chat-input {
-      border: none;
-      padding: 0.8em;
-      font-size: 1em;
-      border-top: 1px solid #ddd;
-      width: 100%;
-      box-sizing: border-box;
-      background: #fff;
-    }
-
-    .chat-input:focus {
-      outline: none;
-      border-top: 1px solid #009fae;
-    }
-
-    .stats-button {
-      position: fixed;
-      bottom: 1em;
-      right: 1em;
-      padding: 0.6em 1em;
-      background: #009fae;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1em;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s;
-    }
-
-    .stats-button:hover {
-      background: #007b8a;
-    }
-
-    @media (max-width: 600px) {
-      .chat-box {
-        width: 95vw;
-        max-width: none;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
-    }
-  </style>
+  <title>Visit Libya Bot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>روبوت Visit Libya 🤖</h1>
-  <div class="chat-toggle" id="chat-toggle" role="button" aria-label="فتح أو إغلاق نافذة الدردشة">💬</div>
-  <div class="chat-box" id="chat-box">
+  <h1 style="text-align:center;color:#009fae;">روبوت Visit Libya 🤖</h1>
+  <div class="chat-toggle" id="chat-toggle">💬</div>
+  <div class="chat-box" id="chat-box" style="display: none;">
     <div class="chat-header">روبوت Visit Libya 🤖</div>
     <div class="chat-messages" id="chat-messages"></div>
-    <input type="text" id="chat-input" placeholder="اسألني عن السياحة في ليبيا..." aria-label="أدخل سؤالك عن السياحة في ليبيا" />
+    <input type="text" id="chat-input" placeholder="اسألني عن السياحة في ليبيا..." />
   </div>
-  <button class="stats-button" onclick="window.open('stats.html', '_blank')" aria-label="عرض إحصائيات السياحة">📊 إحصائيات</button>
-
+  <button onclick="window.open('stats.html', '_blank')" style="position:fixed;bottom:1em;right:1em;padding:0.6em 1em;background:#009fae;color:white;border:none;border-radius:5px;cursor:pointer">📊 إحصائيات</button>
   <script>
     const toggle = document.getElementById("chat-toggle");
     const box = document.getElementById("chat-box");
@@ -169,42 +22,27 @@
 
     toggle.onclick = () => {
       box.style.display = box.style.display === "flex" ? "none" : "flex";
-      if (box.style.display === "flex") input.focus();
     };
 
     input.addEventListener("keypress", async function(e) {
       if (e.key === "Enter" && input.value.trim()) {
         const q = input.value.trim();
-        if (q.length > 500) {
-          addMessage("السؤال طويل جدًا، يرجى تقصيره.", "bot");
-          return;
-        }
         addMessage(q, "user");
         input.value = "";
-        addMessage("جارٍ التحميل...", "bot loading");
-        try {
-          const res = await fetch("https://visitlibya-chatbot-server.onrender.com/ask", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ question: q })
-          });
-          const loadingMsg = messages.querySelector(".loading");
-          if (loadingMsg) loadingMsg.remove();
-          if (!res.ok) throw new Error("Server error");
-          const data = await res.json();
-          addMessage(data.answer || "لا يوجد رد من الخادم", "bot");
-        } catch (error) {
-          const loadingMsg = messages.querySelector(".loading");
-          if (loadingMsg) loadingMsg.remove();
-          addMessage("عذرًا، حدث خطأ. حاول مرة أخرى لاحقًا.", "bot");
-        }
+        const res = await fetch("https://visitlibya-chatbot-server.onrender.com/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question: q })
+        });
+        const data = await res.json();
+        addMessage(data.answer, "bot");
       }
     });
 
     function addMessage(text, cls) {
       const div = document.createElement("div");
-      div.className = `chat-message ${cls}`;
-      div.textContent = text.replace(/[<>]/g, ""); // Basic sanitization
+      div.className = "chat-message " + cls;
+      div.innerText = text;
       messages.appendChild(div);
       messages.scrollTop = messages.scrollHeight;
     }

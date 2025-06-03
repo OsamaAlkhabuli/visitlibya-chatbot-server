@@ -1,0 +1,914 @@
+{
+  "hotels": [
+    {
+      "name": "فندق أفريقيا",
+      "stars": "2 نجمتان",
+      "city": "اجدابيا",
+      "address": "ش / الإمام سحنون",
+      "location": {
+        "lat": 30.7587,
+        "lon": 20.22165
+      },
+      "rooms": 28,
+      "beds": 54,
+      "phone": "92747270"
+    },
+    {
+      "name": "فندق اجدابيا السياحي",
+      "stars": null,
+      "city": "اجدابيا",
+      "address": "اجدابيا",
+      "location": {
+        "lat": 30.75706,
+        "lon": 20.223
+      },
+      "rooms": 21,
+      "beds": 40,
+      "phone": "5626402"
+    },
+    {
+      "name": "فندق امال ليبيا",
+      "stars": "4 نجوم",
+      "city": "اجدابيا",
+      "address": "الطريق الدائري",
+      "location": {
+        "lat": 30.78037,
+        "lon": 20.23078
+      },
+      "rooms": 54,
+      "beds": 86,
+      "phone": "645628951"
+    },
+    {
+      "name": "فندق المدينة السياحي",
+      "stars": null,
+      "city": "اجدابيا",
+      "address": "اجدابيا",
+      "location": {
+        "lat": 30.75766,
+        "lon": 20.22397
+      },
+      "rooms": 24,
+      "beds": 48,
+      "phone": null
+    },
+    {
+      "name": "الجوهرة للشقق الفندقية",
+      "stars": null,
+      "city": "اجدابيا",
+      "address": "شارع الإمام سحنون",
+      "location": {
+        "lat": 30.7575,
+        "lon": 20.22385
+      },
+      "rooms": null,
+      "beds": null,
+      "phone": null
+    },
+    {
+      "name": "nan",
+      "stars": null,
+      "city": "nan",
+      "address": null,
+      "location": {
+        "lat": null,
+        "lon": null
+      },
+      "rooms": 127,
+      "beds": 228,
+      "phone": null
+    }
+  ],
+  "resorts": [
+    {
+      "name": "قرية إدوس السياحية",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 19,
+      "total_units": 240,
+      "beds": 76,
+      "total_beds": 948,
+      "price": 1000
+    },
+    {
+      "name": "قرية مرمرة السياحية",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 36,
+      "total_units": null,
+      "beds": 144,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية ڤيرونا السياحية",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 20,
+      "total_units": null,
+      "beds": 80,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية البرتقالة",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 22,
+      "total_units": null,
+      "beds": 88,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية شط النخيل زوارة",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 13,
+      "total_units": null,
+      "beds": 52,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية اوليڤيا السياحية",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 24,
+      "total_units": null,
+      "beds": 96,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع رياض المنصوري",
+      "type": "منتجع سياحي",
+      "city": "زوارة",
+      "chalets": 18,
+      "total_units": null,
+      "beds": 72,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "إقامة تولين السياحية",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 8,
+      "total_units": null,
+      "beds": 32,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع ڤيلا هيا",
+      "type": "منتجع سياحي",
+      "city": "زوارة",
+      "chalets": 4,
+      "total_units": null,
+      "beds": 35,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع زين السياحي",
+      "type": "شاليهات",
+      "city": "زوارة",
+      "chalets": 3,
+      "total_units": null,
+      "beds": 13,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية تيبودا السياحيه",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 35,
+      "total_units": null,
+      "beds": 140,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية سبتيموس السياحية",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 15,
+      "total_units": null,
+      "beds": 45,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية سيمو السياحية",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 20,
+      "total_units": null,
+      "beds": 60,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "استراحة ازول",
+      "type": "قرية  سياحية",
+      "city": "زوارة",
+      "chalets": 3,
+      "total_units": null,
+      "beds": 15,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع ستي بارك",
+      "type": "منتجع سياحي",
+      "city": "زوارة",
+      "chalets": 0,
+      "total_units": null,
+      "beds": 0,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية جوهرة صبراتة السياحية",
+      "type": "قرية  سياحية",
+      "city": "صبراتة",
+      "chalets": 21,
+      "total_units": 322,
+      "beds": 84,
+      "total_beds": 958,
+      "price": 1000
+    },
+    {
+      "name": "قرية المغرب العربي",
+      "type": "قرية  سياحية",
+      "city": "صبراتة",
+      "chalets": 98,
+      "total_units": null,
+      "beds": 392,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "مركب تليل السياحي",
+      "type": "قرية  سياحية",
+      "city": "صبراتة",
+      "chalets": 203,
+      "total_units": null,
+      "beds": 482,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "القرية السياحية جنزور",
+      "type": "قرية  سياحية",
+      "city": "جنزور",
+      "chalets": 185,
+      "total_units": 748,
+      "beds": 458,
+      "total_beds": 1884,
+      "price": 1000
+    },
+    {
+      "name": "قرية ديار البحر",
+      "type": "قرية  سياحية",
+      "city": "جنزور",
+      "chalets": 150,
+      "total_units": null,
+      "beds": 600,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية بالم سيتي",
+      "type": "قرية  سياحية",
+      "city": "جنزور",
+      "chalets": 413,
+      "total_units": null,
+      "beds": 826,
+      "total_beds": null,
+      "price": 3000
+    },
+    {
+      "name": "القرية السياحية  الريقاتة",
+      "type": "قرية  سياحية",
+      "city": "طرابلس",
+      "chalets": 721,
+      "total_units": 925,
+      "beds": 2884,
+      "total_beds": 3284,
+      "price": 1000
+    },
+    {
+      "name": "شيراتون - النقاط الأربعة",
+      "type": "مركب  سياحية",
+      "city": "طرابلس",
+      "chalets": 204,
+      "total_units": null,
+      "beds": 400,
+      "total_beds": null,
+      "price": 2000
+    },
+    {
+      "name": "القرية السياحية تاجوراء",
+      "type": "قرية  سياحية",
+      "city": "تاجوراء",
+      "chalets": 152,
+      "total_units": 177,
+      "beds": 300,
+      "total_beds": 400,
+      "price": 1000
+    },
+    {
+      "name": "منتجع سمرلاند المائي",
+      "type": "منتجع سياحي",
+      "city": "تاجوراء",
+      "chalets": 25,
+      "total_units": null,
+      "beds": 100,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية مارينا السياحية",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 5,
+      "total_units": 341,
+      "beds": 60,
+      "total_beds": 1288,
+      "price": 1000
+    },
+    {
+      "name": "قرية قصر سيلين العائلية",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 11,
+      "total_units": null,
+      "beds": 44,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية حدائق غنيمة",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 23,
+      "total_units": null,
+      "beds": 250,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "إستراحة شط غنيمة",
+      "type": "إستراحة",
+      "city": "الخمس",
+      "chalets": 1,
+      "total_units": null,
+      "beds": 4,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية المتوسط العائلية",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 23,
+      "total_units": null,
+      "beds": 92,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية قوس غنيمة السياحية",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 10,
+      "total_units": null,
+      "beds": 20,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية لؤلؤة غنيمة العائلية",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 10,
+      "total_units": null,
+      "beds": 20,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية شمس البحر",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 10,
+      "total_units": null,
+      "beds": 20,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "الشاطيء الذهبي",
+      "type": "منتجع سياحي",
+      "city": "الخمس",
+      "chalets": 15,
+      "total_units": null,
+      "beds": 30,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع سي شيلز",
+      "type": "منتجع سياحي",
+      "city": "الخمس",
+      "chalets": 8,
+      "total_units": null,
+      "beds": 48,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع حوض البحر",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 58,
+      "total_units": null,
+      "beds": 250,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية الخمس السياحية",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 24,
+      "total_units": null,
+      "beds": 96,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قريه غنيمه العائليه",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 52,
+      "total_units": null,
+      "beds": 100,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية اكوا مارين السياحية",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 10,
+      "total_units": null,
+      "beds": 13,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية جنيف العائلية غنيمة",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 15,
+      "total_units": null,
+      "beds": 37,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع شاطئ غنيمة",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 26,
+      "total_units": null,
+      "beds": 64,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية شاطئ النخيل الذهبي",
+      "type": "قرية  سياحية",
+      "city": "الخمس",
+      "chalets": 30,
+      "total_units": null,
+      "beds": 120,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "شاليهات بن حمودة العائلي",
+      "type": "شاليهات",
+      "city": "الخمس",
+      "chalets": 10,
+      "total_units": null,
+      "beds": 20,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع كريستال السياحي",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 6,
+      "total_units": 457,
+      "beds": 24,
+      "total_beds": 1657,
+      "price": 1000
+    },
+    {
+      "name": "منتجع رويال فيلا",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 40,
+      "total_units": null,
+      "beds": 80,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية القويعة",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 22,
+      "total_units": null,
+      "beds": 132,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع فيلا دريم هاوس",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 7,
+      "total_units": null,
+      "beds": 28,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع شط مريم",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 26,
+      "total_units": null,
+      "beds": 130,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع الجود القويعه",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 1,
+      "total_units": null,
+      "beds": 4,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع اتش تي السياحي 1",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 17,
+      "total_units": null,
+      "beds": 136,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع اتش تي 3",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 14,
+      "total_units": null,
+      "beds": 56,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع شاليهات للاجار",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 8,
+      "total_units": null,
+      "beds": 32,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية العطايا العائلية",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 15,
+      "total_units": null,
+      "beds": 31,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع برستيج",
+      "type": "منتجع سياحي",
+      "city": "القره بولي",
+      "chalets": 38,
+      "total_units": null,
+      "beds": 152,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية القويعة السياحية",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 22,
+      "total_units": null,
+      "beds": 132,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية ميار البحر العائليه",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 27,
+      "total_units": null,
+      "beds": 108,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "شاليهت بن بيه",
+      "type": "شاليهت للايجار",
+      "city": "القره بولي",
+      "chalets": 18,
+      "total_units": null,
+      "beds": 54,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية أغيث السياحية",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 20,
+      "total_units": null,
+      "beds": 40,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية الخلة السياحية العائلية",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 15,
+      "total_units": null,
+      "beds": 30,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "مجمع جواهر لاند",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 14,
+      "total_units": null,
+      "beds": 56,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع دار البحر",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 1,
+      "total_units": null,
+      "beds": 8,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية لؤلؤة غنيمة العائلية",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 8,
+      "total_units": null,
+      "beds": 32,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "شاليهات ركن النيروز",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 12,
+      "total_units": null,
+      "beds": 48,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع وادي بالنور",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 30,
+      "total_units": null,
+      "beds": 60,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع بيتش هاوس",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 2,
+      "total_units": null,
+      "beds": 8,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع النخبة العائلي",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 30,
+      "total_units": null,
+      "beds": 120,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية شمس البحر",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 14,
+      "total_units": null,
+      "beds": 28,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع ايليت السياحي",
+      "type": "قرية  سياحية",
+      "city": "القره بولي",
+      "chalets": 32,
+      "total_units": null,
+      "beds": 128,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية رأس الحمراء",
+      "type": "قرية  سياحية",
+      "city": "العلوص",
+      "chalets": 18,
+      "total_units": null,
+      "beds": 54,
+      "total_beds": 54,
+      "price": 1000
+    },
+    {
+      "name": "قرية الهُزم السياحية",
+      "type": "قرية  سياحية",
+      "city": "زليتن",
+      "chalets": 15,
+      "total_units": 29,
+      "beds": 45,
+      "total_beds": 91,
+      "price": 1000
+    },
+    {
+      "name": "منازل العز السياحية",
+      "type": "قرية  سياحية",
+      "city": "زليتن",
+      "chalets": 10,
+      "total_units": null,
+      "beds": 30,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية أصيل السياحية",
+      "type": "قرية  سياحية",
+      "city": "زليتن",
+      "chalets": 4,
+      "total_units": null,
+      "beds": 16,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع الأمان السياحي",
+      "type": "منتجع سياحي",
+      "city": "مصراتة",
+      "chalets": 90,
+      "total_units": 114,
+      "beds": 737,
+      "total_beds": 852,
+      "price": 1000
+    },
+    {
+      "name": "منتجع مصراتة",
+      "type": "منتجع سياحي",
+      "city": "مصراتة",
+      "chalets": 0,
+      "total_units": null,
+      "beds": 0,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "منتجع فينيسيا",
+      "type": "منتجع سياحي",
+      "city": "مصراتة",
+      "chalets": 0,
+      "total_units": null,
+      "beds": 0,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "قرية زريق السياحية",
+      "type": "قرية  سياحية",
+      "city": "مصراتة",
+      "chalets": 24,
+      "total_units": null,
+      "beds": 115,
+      "total_beds": null,
+      "price": 1000
+    },
+    {
+      "name": "nan",
+      "type": "nan",
+      "city": "nan",
+      "chalets": null,
+      "total_units": null,
+      "beds": null,
+      "total_beds": null,
+      "price": null
+    },
+    {
+      "name": "nan",
+      "type": "nan",
+      "city": "nan",
+      "chalets": 3353,
+      "total_units": 3353,
+      "beds": null,
+      "total_beds": null,
+      "price": 1039
+    },
+    {
+      "name": "nan",
+      "type": "nan",
+      "city": "nan",
+      "chalets": null,
+      "total_units": null,
+      "beds": null,
+      "total_beds": null,
+      "price": null
+    },
+    {
+      "name": "nan",
+      "type": "nan",
+      "city": "nan",
+      "chalets": null,
+      "total_units": null,
+      "beds": null,
+      "total_beds": null,
+      "price": null
+    },
+    {
+      "name": "nan",
+      "type": "nan",
+      "city": "nan",
+      "chalets": null,
+      "total_units": null,
+      "beds": null,
+      "total_beds": null,
+      "price": null
+    },
+    {
+      "name": "nan",
+      "type": "nan",
+      "city": "nan",
+      "chalets": null,
+      "total_units": null,
+      "beds": null,
+      "total_beds": null,
+      "price": null
+    },
+    {
+      "name": "nan",
+      "type": "nan",
+      "city": "nan",
+      "chalets": null,
+      "total_units": null,
+      "beds": null,
+      "total_beds": null,
+      "price": null
+    }
+  ]
+}
