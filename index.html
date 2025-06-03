@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="chatbot.css" />
   <style>
     body {
       margin: 0;
@@ -71,6 +72,17 @@
   <div class="footer">
     تصميم وبرمجة مركز المعلومات والتوثيق السياحي 2025
   </div>
+
+  <!-- فقاعة الدردشة -->
+  <div id="chatToggle">💬</div>
+  <div id="chatContainer">
+    <div id="chat"></div>
+    <div style="display:flex">
+      <input id="chatInput" type="text" placeholder="اكتب سؤالك..." />
+      <button id="sendBtn">إرسال</button>
+    </div>
+  </div>
+  <script src="chatbot.js"></script>
 
   <script>
     const swiper = new Swiper('.swiper', {
