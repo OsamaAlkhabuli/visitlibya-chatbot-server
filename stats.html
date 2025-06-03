@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>إحصائيات البوت - Visit Libya</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; text-align: center; padding: 2em; direction: rtl; }
+    h1 { color: #009fae; }
+    .card {
+      background: white;
+      padding: 1em;
+      margin: 1em auto;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .value { font-size: 2em; color: #333; margin: 0.2em 0; }
+    footer { margin-top: 2em; color: #888; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+<h1>📊 إحصائيات البوت - Visit Libya</h1>
+<div class="card"><h3>📦 إجمالي الأسئلة المسجلة</h3><div class="value" id="total">...</div></div>
+<div class="card"><h3>✅ عدد الإجابات المعرفة</h3><div class="value" id="answered">...</div></div>
+<div class="card"><h3>❌ عدد الأسئلة بدون إجابة</h3><div class="value" id="unanswered">...</div></div>
+<footer>Visit Libya Bot 2025 &copy;</footer>
+<script>
+async function fetchStats() {
+  try {
+    const res = await fetch("https://visitlibya-chatbot-server.onrender.com/memory.json");
+    const data = await res.json();
+    const keys = Object.keys(data);
+    const total = keys.length;
+    const unanswered = keys.filter(k => data[k] === null || data[k] === "").length;
+    const answered = total - unanswered;
+    document.getElementById("total").innerText = total;
+    document.getElementById("answered").innerText = answered;
+    document.getElementById("unanswered").innerText = unanswered;
+  } catch (e) {
+    document.body.innerHTML = "<h2>⚠️ تعذر تحميل الإحصائيات من الخادم</h2>";
+  }
+}
+fetchStats();
+</script>
+</body>
+</html>
