@@ -1,78 +1,82 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visit Libya</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Libya - دليلك السياحي الذكي</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      direction: rtl;
+      font-family: "Arial", sans-serif;
+      background-color: #f8f8f8;
+    }
+    .header {
+      background-color: #0097a7;
+      color: white;
+      padding: 2rem 0 1rem;
       text-align: center;
     }
-    header {
-      background-color: #008b9a;
-      color: white;
-      padding: 1rem;
-    }
-    header img {
-      height: 60px;
+    .header img {
+      width: 60px;
       margin-bottom: 10px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 1.8rem;
     }
     .swiper {
       width: 100%;
-      height: 400px;
+      max-height: 92vh;
+      margin: 0 auto;
+      border-top: 5px solid #0097a7;
     }
     .swiper-slide {
-      background-position: center;
-      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    footer {
-      background-color: #222;
-      color: #ccc;
+    .swiper-slide img {
+      max-width: 100%;
+      max-height: 92vh;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #1c1c1c;
+      color: white;
       padding: 1rem;
-      font-size: 0.9rem;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <header>
+  <div class="header">
     <img src="logo.png" alt="Visit Libya Logo">
-    <h1>مرحبًا بك في دليلك السياحي الذكي</h1>
+    <h2>مرحبًا بك في دليلك السياحي الذكي</h2>
     <p>ليبيا مهد الحضارات وموطن السحر والجمال</p>
-  </header>
-
-  <!-- Slider main container -->
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url('0-02-05-e4c3d5831812ff31aecb17963dcc58dac07ee12107b34277eb1fc1cbaa069f49_35fc8e4df75e59b7.jpg')"></div>
-      <div class="swiper-slide" style="background-image:url('2.JPG')"></div>
-      <div class="swiper-slide" style="background-image:url('7.jpg')"></div>
-      <div class="swiper-slide" style="background-image:url('10.jpg')"></div>
-      <div class="swiper-slide" style="background-image:url('2021-11-20(3).jpg')"></div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
 
-  <footer>
-    تصميم وبرمجة مركز المعلومات والتوثيق السياحي 2025
-  </footer>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="2021-11-20(3).jpg" alt="صورة 1" /></div>
+      <div class="swiper-slide"><img src="0-02-05-e4c3d5831812ff31aecb17963dcc58dac07ee12107b34277eb1fc1cbaa069f49_35fc8e4df75e59b7.jpg" alt="صورة 2" /></div>
+      <div class="swiper-slide"><img src="2.JPG" alt="صورة 3" /></div>
+      <div class="swiper-slide"><img src="10.jpg" alt="صورة 4" /></div>
+      <div class="swiper-slide"><img src="DSC_0265.JPG" alt="صورة 5" /></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <div class="footer">
+    تصميم وبرمجة مركز المعلومات والتوثيق السياحي 2025
+  </div>
+
   <script>
     const swiper = new Swiper('.swiper', {
       loop: true,
       autoplay: {
-        delay: 3000,
+        delay: 3500,
         disableOnInteraction: false,
       },
       pagination: {
