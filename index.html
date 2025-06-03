@@ -1,178 +1,45 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visit Libya - دليلك السياحي الذكي</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="chatbot.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: "Arial", sans-serif;
-      background-color: #f8f8f8;
-    }
-    .header {
-      background-color: #0097a7;
-      color: white;
-      padding: 2rem 0 1rem;
-      text-align: center;
-    }
-    .header img {
-      width: 60px;
-      margin-bottom: 10px;
-    }
-    .swiper {
-      width: 100%;
-      max-height: 92vh;
-      margin: 0 auto;
-      border-top: 5px solid #0097a7;
-    }
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .swiper-slide img {
-      max-width: 100%;
-      max-height: 92vh;
-      object-fit: cover;
-    }
-    .footer {
-      background-color: #1c1c1c;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    /* تحسين شكل فقاعة الدردشة */
-    #chatContainer {
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      width: 360px;
-      max-height: 500px;
-      background: #ffffff;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-      display: none;
-      flex-direction: column;
-      overflow: hidden;
-      z-index: 1000;
-      border: 2px solid #0097a7;
-    }
-    #chatContainer.open {
-      display: flex;
-    }
-    #chatToggle {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: linear-gradient(45deg, #00796b, #0097a7);
-      color: white;
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-      font-size: 28px;
-      text-align: center;
-      line-height: 65px;
-      cursor: pointer;
-      z-index: 999;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    #chat {
-      flex: 1;
-      padding: 12px;
-      overflow-y: auto;
-      font-family: Tahoma;
-      font-size: 14px;
-      background: #fafafa;
-    }
-    #chat .user {
-      text-align: right;
-      margin: 6px;
-      color: #00695c;
-      font-weight: bold;
-    }
-    #chat .bot {
-      text-align: left;
-      margin: 6px;
-      color: #303f9f;
-      font-weight: bold;
-    }
-    #chatInput {
-      border: none;
-      border-top: 1px solid #ccc;
-      padding: 10px;
-      width: 80%;
-      font-size: 14px;
-      outline: none;
-    }
-    #sendBtn {
-      width: 20%;
-      background: #00796b;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة ليبيا السياحية</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <script defer src="chatbot.js"></script>
 </head>
 <body>
-  <div class="header">
-    <img src="logo.png" alt="Visit Libya Logo">
-    <h2>مرحبًا بك في دليلك السياحي الذكي</h2>
+  <header class="hero">
+    <img src="logo.png" alt="Visit Libya Logo" class="logo">
+    <h1>مرحبًا بك في دليلك السياحي الذكي</h1>
     <p>ليبيا مهد الحضارات وموطن السحر والجمال</p>
-  </div>
+  </header>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="2021-11-20(3).jpg" alt="صورة 1" /></div>
-      <div class="swiper-slide"><img src="0-02-05-e4c3d5831812ff31aecb17963dcc58dac07ee12107b34277eb1fc1cbaa069f49_35fc8e4df75e59b7.jpg" alt="صورة 2" /></div>
-      <div class="swiper-slide"><img src="2.JPG" alt="صورة 3" /></div>
-      <div class="swiper-slide"><img src="10.jpg" alt="صورة 4" /></div>
-      <div class="swiper-slide"><img src="DSC_0265.JPG" alt="صورة 5" /></div>
+  <!-- المحتوى العام -->
+  <main>
+    <div class="slider-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="10.jpg" alt="صورة 1"></div>
+          <div class="swiper-slide"><img src="2.JPG" alt="صورة 2"></div>
+          <div class="swiper-slide"><img src="3.JPG" alt="صورة 3"></div>
+          <div class="swiper-slide"><img src="6.JPG" alt="صورة 4"></div>
+          <div class="swiper-slide"><img src="DSC_0265.JPG" alt="صورة 5"></div>
+        </div>
+      </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+  </main>
+
+  <!-- روبوت الدردشة -->
+  <div id="chat-toggle">💬</div>
+  <div id="chat-box">
+    <div id="chat-header">روبوت Visit Libya 🤖 <span id="chat-close">✖</span></div>
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="...اسألني بالعربية أو الإنجليزية">
   </div>
 
-  <div class="footer">
-    تصميم وبرمجة مركز المعلومات والتوثيق السياحي 2025
-  </div>
-
-  <!-- فقاعة الدردشة -->
-  <div id="chatToggle">💬</div>
-  <div id="chatContainer">
-    <div id="chat"></div>
-    <div style="display:flex">
-      <input id="chatInput" type="text" placeholder="اكتب سؤالك..." />
-      <button id="sendBtn">إرسال</button>
-    </div>
-  </div>
-
-  <script src="chatbot.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+  <footer>
+    تصميم وبرمجة مركز المعلومات والتوثيق السياحي 2025 ©
+  </footer>
 </body>
 </html>
-ر
