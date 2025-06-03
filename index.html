@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Libya</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      direction: rtl;
+      text-align: center;
+    }
+    header {
+      background-color: #008b9a;
+      color: white;
+      padding: 1rem;
+    }
+    header img {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .swiper {
+      width: 100%;
+      height: 400px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Visit Libya Logo">
+    <h1>مرحبًا بك في دليلك السياحي الذكي</h1>
+    <p>ليبيا مهد الحضارات وموطن السحر والجمال</p>
+  </header>
+
+  <!-- Slider main container -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('0-02-05-e4c3d5831812ff31aecb17963dcc58dac07ee12107b34277eb1fc1cbaa069f49_35fc8e4df75e59b7.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('2.JPG')"></div>
+      <div class="swiper-slide" style="background-image:url('7.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('10.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('2021-11-20(3).jpg')"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <footer>
+    تصميم وبرمجة مركز المعلومات والتوثيق السياحي 2025
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
