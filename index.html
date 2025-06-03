@@ -47,6 +47,78 @@
       text-align: center;
       font-size: 14px;
     }
+
+    /* تحسين شكل فقاعة الدردشة */
+    #chatContainer {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 360px;
+      max-height: 500px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 1000;
+      border: 2px solid #0097a7;
+    }
+    #chatContainer.open {
+      display: flex;
+    }
+    #chatToggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(45deg, #00796b, #0097a7);
+      color: white;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      font-size: 28px;
+      text-align: center;
+      line-height: 65px;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    #chat {
+      flex: 1;
+      padding: 12px;
+      overflow-y: auto;
+      font-family: Tahoma;
+      font-size: 14px;
+      background: #fafafa;
+    }
+    #chat .user {
+      text-align: right;
+      margin: 6px;
+      color: #00695c;
+      font-weight: bold;
+    }
+    #chat .bot {
+      text-align: left;
+      margin: 6px;
+      color: #303f9f;
+      font-weight: bold;
+    }
+    #chatInput {
+      border: none;
+      border-top: 1px solid #ccc;
+      padding: 10px;
+      width: 80%;
+      font-size: 14px;
+      outline: none;
+    }
+    #sendBtn {
+      width: 20%;
+      background: #00796b;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -82,8 +154,8 @@
       <button id="sendBtn">إرسال</button>
     </div>
   </div>
-  <script src="chatbot.js"></script>
 
+  <script src="chatbot.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
       loop: true,
@@ -103,3 +175,4 @@
   </script>
 </body>
 </html>
+ر
